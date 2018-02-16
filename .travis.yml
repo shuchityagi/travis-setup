@@ -3,10 +3,11 @@ sudo: false
 language: python
 
 python:
-  - 3.6
+  - 3.6.1
 
+# command to install dependencies
 install:
-pip install -r requirements.txt
-
+  - pip install -r requirements.txt
+# command to run tests
 script:
-robot tests/nodeSetup.robot
+  - robot tests/nodeSetup.robot
